@@ -1,0 +1,49 @@
+import java.awt.*;  
+import java.awt.event.*;  
+public class Tejasvi
+ {  
+public static void main(String[] args) 
+{  
+    Frame f=new Frame(“Four Button”);  
+    final TextField Tf=new TextField();  
+    Tf.setBounds(50,50,150,30);  
+    Button a=new Button(“Hindi”);  
+    a.setBounds(50,100,100,40);  
+    a.addActionListener(new ActionListener()
+{  
+    Public void actionPerformed(ActionEvent e)
+{  
+            Tf.setText(“hindi language”);  
+        }  
+    });
+Button b=new Button(“English”);  
+    b.setBounds(50,150,100,40);  
+    b.addActionListener(new ActionListener(){  
+    public void actionPerformed(ActionEvent e){  
+            Tf.setText(“English language”);  
+        }  
+    });	
+	Button c=new Button(“English+Hindi”);  
+    c.setBounds(50,200,100,40);  
+    c.addActionListener(new ActionListener(){  
+    public void actionPerformed(ActionEvent e){  
+            Tf.setText(“English+Hindi language”);  
+        }  
+    });	
+	Button d=new Button(“None”);  
+    d.setBounds(50,250,100,40);  
+    d.addActionListener(new ActionListener(){  
+    public void actionPerformed(ActionEvent e){  
+            Tf.setText(“Not any Language”);  
+        }  
+    });	
+    f.add(a);
+    f.add(b);
+    f.add(c);
+    f.add(d);
+    f.add(Tf);  
+    f.setSize(400,400);  
+    f.setLayout(null);  
+    f.setVisible(true);   
+}  
+} 
