@@ -1,0 +1,35 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class MouseListenerDemo extends Frame implements MouseMotionListener
+ {
+	MouseListenerDemo()
+	{
+		addMouseMotionListener(this);
+		setSize(200,200);
+		setLayout(null);
+		setVisible(true);
+
+
+
+	}
+	public void mouseDragged(MouseEvent e)
+	{
+		Graphics g = getGraphics();
+		g.setColor(Color.YELLOW);
+		g.fillOval(e.getX(), e.getY(), 10, 10);
+
+	}
+	public void mouseMoved(MouseEvent e) {}
+
+
+	public static void main(String[] args)
+	{
+
+	new MouseListenerDemo();
+
+	}
+
+}
+
+
